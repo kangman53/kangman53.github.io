@@ -1,0 +1,83 @@
+html {
+  box-sizing:border-box
+}
+*,*:before,*:after{
+  box-sizing:inherit;
+  margin: 0;
+  padding: 0;
+}
+hr{border:0;border-top:1px solid #000000;margin:40px 0}
+h1,h2,h3,h4,h5,h6{font-family:"Karma",Arial,sans-serif;font-weight:500;margin:10px 0}
+
+.navbar{
+  top: 0;
+  position: fixed;
+  background-color: rgba(64, 64, 64, 0.9);
+  width: 100%;
+}
+
+.navbar .title{
+  float: left;
+  margin: 15px 30px;
+  font-size: 35px!important;
+  font-family: Chonburi;
+  color: white;
+  text-shadow: 5px 1px brown;
+}
+
+.navbar .title a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar>a {
+  display: block;
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Chonburi;
+}
+
+.navbar>a:hover{
+  background-color: rgba(115, 115, 115, 0.5);
+}
+
+.content{
+  transition:margin-left .4s;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:1200px;
+  margin-top:125px!important;
+  padding:8px 16px!important;
+  background: rgba(64, 64, 64, 0.1);
+}
+
+.content h3{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.content .card{
+  box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.75);  width: 450px;
+  margin: 25px auto;
+  display: block;
+}
+
+.content .card img{
+  width: 100%;
+}
+
+.content .article{
+  max-width: 900px;
+  margin: 15px auto;
+  font-family:"Karma",Arial,sans-serif;
+}
+
+.content .article p{
+  text-align: justify;
+  margin-top: 10px;
+}

@@ -1,0 +1,150 @@
+html {
+  background: url(assets/img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing:border-box
+}
+*,*:before,*:after{
+  box-sizing:inherit;
+  margin: 0;
+  padding: 0;
+}
+.homepage{
+  width: 100%;
+  text-align: center;
+}
+.homepage .title{
+  margin-top: 100px;
+  font-size: 75px;
+  font-family: 'Berkshire Swash';
+  color: white;
+  text-shadow: 5px 1px brown;
+}
+
+.homepage .title:hover{
+  text-shadow: 5px 1px red;
+}
+
+.homepage .title strong{
+  font-size: 100px;
+}
+
+.homepage .start{
+  position: relative;
+  margin-top: 200px;
+  border: solid 3px white;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 5px 5px white;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.homepage .start:hover{
+    box-shadow: 5px 5px red;
+    border: solid 3px orange;
+    color: yellow;
+    font-size: 25px;
+  }
+
+.homepage .start p{
+  margin: 15px 20px;
+}
+
+.navbar{
+  top: 0;
+  position: absolute;
+}
+
+.navbar .title{
+  float: left;
+  margin: 15px 30px;
+  font-size: 35px!important;
+  font-family: Chonburi;
+  color: white;
+  text-shadow: 5px 1px brown;
+}
+
+.navbar .title a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar>a {
+  display: block;
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Chonburi;
+}
+
+.navbar>a:hover{
+  background-color: rgba(115, 115, 115, 0.5);
+}
+
+.content{
+  transition:margin-left .4s;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:1200px;
+  margin-top:75px!important;
+  padding:8px 16px!important;
+}
+
+.row{
+  padding-bottom:16px!important;
+  display:inline-block;
+  width:auto;
+}
+
+.row:after, .row:before{
+  content:"";display:table;clear:both;
+}
+
+.row, .row>.card {
+  padding:0 8px;
+}
+
+.card img{
+  width: 100%;
+}
+
+.container{
+  position: relative;
+}
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+.card{
+  float:left;
+  width:100%;
+}
+@media (min-width:601px){
+  .card{width:49.9999%}
+}
